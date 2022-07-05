@@ -1,5 +1,5 @@
-import { StyleSheet, Text, View } from 'react-native';
-import { Avatar, Button, Card, Title, Paragraph } from 'react-native-paper';
+import { StyleSheet, View } from 'react-native';
+import { Card } from 'react-native-paper';
 
 export default function CardHeader(product) {
     return (
@@ -11,7 +11,6 @@ export default function CardHeader(product) {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-
     },
     titre: {
     }

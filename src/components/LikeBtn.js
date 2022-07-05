@@ -1,18 +1,12 @@
-import { StyleSheet, Text, View } from 'react-native';
-import { Avatar, Button, Card, Title, Paragraph } from 'react-native-paper';
+import { View } from 'react-native';
+import { Button } from 'react-native-paper';
 
-export default function LikeBtn(product) {
+export default function LikeBtn(likes) {
     return (
         <View>
             <Button icon="heart">
-                {product}
+                {likes.product}
             </Button>
         </View>
     );
 }
-const styles = StyleSheet.create({
-    img: {
-        width: 50,
-        height: 50,
-    }
-});
