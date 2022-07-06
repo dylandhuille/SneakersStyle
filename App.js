@@ -1,14 +1,14 @@
 import { StyleSheet, View } from 'react-native';
 import CardScreen from './src/screen/CardScreen';
 import { StatusBar } from 'expo-status-bar';
-import { ScrollView } from 'react-native';
-
+import Searchbar_cust from './src/components/Searchbar_cust';
 export default function App() {
   return (
-    <ScrollView style={styles.container}>
+    <View>
+      <Searchbar_cust />
       <CardScreen />
-      <StatusBar style="auto" />
-    </ScrollView >
+      <StatusBar />
+    </View>
   );
 }
 const styles = StyleSheet.create({
@@ -17,4 +17,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     paddingTop: 20,
   },
+  card: {
+    paddingTop: 50
+  }
 });
